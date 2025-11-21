@@ -12,7 +12,7 @@ function Home(){
     },[])
     return(
         <div>
-            <h1>This is Sample</h1>
+            <h1>E-Commerce Store</h1>
             <ul>
             {products.map((item,index) => (
                 <li key={index}>{item.name},{item.price}

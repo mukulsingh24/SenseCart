@@ -5,6 +5,7 @@ import Home from "./pages/homepage"
 import Login from "./pages/loginpage"
 import Register from "./pages/registration"
 import CartPage from "./pages/cartpage"
+import AdminDashboard from "./pages/admin/AdminDashboard"
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
            <Route path="/login" element={ <Login /> } />
            <Route path="/register" element={ <Register/> } />
            <Route path="/cart" element={<CartPage />} />
+           <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
      </>
   )

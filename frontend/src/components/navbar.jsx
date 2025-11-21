@@ -4,6 +4,7 @@ function Nav(){
     return(
         <div>
             <h1>E-Commerce Store</h1>
+            
         </div>
     )
 }

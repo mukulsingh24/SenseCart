@@ -12,7 +12,6 @@ function Home(){
     },[])
     return(
         <div>
-            <h1>E-Commerce Store</h1>
             <ul>
             {products.map((item,index) => (
                 <li key={index}>{item.name},{item.price}

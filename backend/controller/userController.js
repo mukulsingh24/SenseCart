@@ -21,6 +21,23 @@ const RegisterUser = async(req,res)=>{
     }
 }
 
-const LoginUser = 
+const LoginUser = async(req,res)=>{
+    const{email,password} = req.body
+    const test = await User.findOne({email})
+    if(test){
+        const same = await User.comparePassword(password)
+        if(same){
+            jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "1h" })
+            res.status(200).json(token,user,{message:"Login Successfull"})
+        }
+        else{
+            res.status(409).json({message:"Invalid User Credentials"})
+
+        }
+    }
+    else{
+        res.status(409).json({message:"User Doesn't Exists"})
+    }
+}
 
 module.exports = {RegisterUser,LoginUser}

@@ -3,7 +3,7 @@ import { CartContext } from "../context/CartContext"; // Import the Cloud
 import axios from 'axios'
 
 function CartPage() {
-    const { cart } = useContext(CartContext);
+    const { cart,clearCart} = useContext(CartContext);
     const totalPrice = cart.reduce((total, item) => total + item.price, 0);
     const handleCheckout = async() =>{
         const userString = localStorage.getItem("user")
@@ -29,7 +29,7 @@ function CartPage() {
                     </ul>
                     
                     <h3>Total: ${totalPrice}</h3>
-                    <button onClick={()=>handleCheckout}>Checkout</button>
+                    <button onClick={()=>handleCheckout()}>Checkout</button>
                 </div>
             )}
         </div>

@@ -24,4 +24,15 @@ const getProduct = async(req,res) =>{
         res.status(500).json({message:"Error Getting Product"})
     }
 }
-module.exports = {createProduct,getProduct}
+
+const deleteProduct = async(req,res)=>{
+    try{
+        const del = await Product.findByIdAndDelete(req.params.id)
+        res.status(200).json({message:"Product Deletion Successfull"})
+    }
+    catch(err){
+        res.status(500).json({message:"Error Deleting Product"})
+    }
+
+}
+module.exports = {createProduct,getProduct,deleteProduct}

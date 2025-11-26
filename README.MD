@@ -1,4 +1,4 @@
-# 🛍️ E-Commerce Store
+# 🛍️ SenseCart
 
 A modern, full-stack e-commerce platform built with the **MERN** stack (MongoDB, Express, React, Node.js). This project provides a complete online shopping experience with user authentication, product management, shopping cart functionality, and an admin dashboard.
 
@@ -21,7 +21,7 @@ A modern, full-stack e-commerce platform built with the **MERN** stack (MongoDB,
 
 ## 🎯 About the Project
 
-**E-Commerce Store** is a full-featured online marketplace designed to showcase products and facilitate seamless shopping experiences. The platform includes:
+**SenseCart** is a full-featured online marketplace designed to showcase products and facilitate seamless shopping experiences. The platform includes:
 
 - **User Management**: Registration, login, and profile management
 - **Product Catalog**: Browse and search products with detailed information
